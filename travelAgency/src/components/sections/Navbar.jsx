@@ -8,12 +8,12 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center font-semibold pt-6 text-navText cursor-pointer">
+    <div className="flex justify-between items-center font-bold pt-6 text-navText cursor-pointer">
       <div>
         <img src="./images/logo.png" alt="" />
       </div>
 
-      <div className="flex justify-around items-center w-2/3 max-md:hidden space-x-2   ">
+      <div className="flex justify-around items-center w-2/3 max-lg:hidden space-x-2   ">
         <a className=" hover:text-blue-500 transition-all ease-in duration-200">
           Destinations
         </a>
@@ -42,7 +42,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="md:hidden relative">
+      <div className="lg:hidden relative">
         {menu ? (
           <RxCross2
             onClick={toggleMenu}
